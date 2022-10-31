@@ -8,7 +8,7 @@ author: Simeon Lees
 
 # Elements of Computing Systems: Boolean arithmetic
 
-TL;DR basic logic gates can be combined to create an **ALU** (arithmetic logic unit) which is the centerpiece of a CPU. Basic arithmetic is how low-level computing is carried out.
+Basic logic gates can be combined to create an **ALU** (arithmetic logic unit) which is the centerpiece of a CPU. Basic arithmetic is how low-level computing is carried out.
 
 - All boolean arithmetic can be carried out by addition. Wha?
 - **Word size** - number of bits a computer is using to represent a chunk of information, e.g. an integer

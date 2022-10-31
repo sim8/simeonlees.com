@@ -8,7 +8,7 @@ author: Simeon Lees
 
 # Elements of Computing Systems: Boolean logic
 
-TL;DR basic logic gates (AND, OR, NAND) are the most atomic building blocks of computers and can quickly be combined to create chips capable of arithmetic.
+Basic logic gates (AND, OR, NAND) are the most atomic building blocks of computers and can quickly be combined to create chips capable of arithmetic.
 
 - Examples of gates: **And**, **Or**, **Xor**, **Multiplexer**, **Demultiplexer**, + multi bit versions
 - Boolean truth table (each permutation) can be derived from boolean expression, and vice versa
