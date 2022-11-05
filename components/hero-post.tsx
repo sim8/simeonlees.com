@@ -1,4 +1,3 @@
-import Avatar from './avatar'
 import DateFormatter from './date-formatter'
 import Link from 'next/link'
 
