@@ -1,10 +1,10 @@
 import Container from '../components/container'
-import MoreStories from '../components/more-stories'
+import MoreStories from '../components/Blog'
 import Layout from '../components/layout'
 import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
 import Post from '../interfaces/post'
-import Link from 'next/link'
+import Navigation from '../components/Navigation'
 
 type Props = {
   allPosts: Post[]
@@ -18,7 +18,7 @@ export default function Blog({ allPosts }: Props) {
           <title>Simeon Lees - blog</title>
         </Head>
         <Container>
-        <Link href="/">About</Link>
+          <Navigation />
           <MoreStories posts={allPosts} />
         </Container>
       </Layout>
