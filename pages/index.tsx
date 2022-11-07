@@ -1,40 +1,24 @@
-import Container from '../components/container'
-import MoreStories from '../components/more-stories'
+import Container from '../components/Container'
 import Layout from '../components/layout'
-import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
-import { CMS_NAME } from '../lib/constants'
-import Post from '../interfaces/post'
+import Navigation from '../components/Navigation'
 
-type Props = {
-  allPosts: Post[]
-}
-
-export default function Index({ allPosts }: Props) {
+export default function Index() {
   return (
     <>
       <Layout>
         <Head>
-          <title>Next.js Blog Example with {CMS_NAME}</title>
+          <title>Simeon Lees</title>
         </Head>
         <Container>
-          <MoreStories posts={allPosts} />
+          <Navigation/>
+          <section>
+            <h1 className="mb-8 text-5xl md:text-7xl font-bold tracking-tighter leading-tight">Hi, I'm Simeon Lees.</h1>
+            <p>Hey, I'm a Frontend Engineer with a passion for crafting <strong>delightful user experiences</strong>. I'm currently a Tech Lead at <a className="text-blue" href="https://www.hubspot.com">HubSpot</a> building out its collaboration platform.</p>
+            </section>
+
         </Container>
       </Layout>
     </>
   )
-}
-
-export const getStaticProps = async () => {
-  const allPosts = getAllPosts([
-    'title',
-    'date',
-    'slug',
-    'author',
-    'description',
-  ])
-
-  return {
-    props: { allPosts },
-  }
 }
