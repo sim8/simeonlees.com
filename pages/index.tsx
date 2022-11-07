@@ -1,4 +1,4 @@
-import Container from '../components/Cdontainer'
+import Container from '../components/Container'
 import Layout from '../components/layout'
 import Head from 'next/head'
 import Navigation from '../components/Navigation'

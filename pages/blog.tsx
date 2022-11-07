@@ -1,4 +1,4 @@
-import Container from '../components/Cdontainer'
+import Container from '../components/Container'
 import MoreStories from '../components/Blog'
 import Layout from '../components/layout'
 import { getAllPosts } from '../lib/api'
