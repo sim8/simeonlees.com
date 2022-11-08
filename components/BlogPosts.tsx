@@ -1,4 +1,5 @@
-import PostPreview from './post-preview'
+import Link from 'next/link'
+import DateFormatter from './date-formatter'
 import type Post from '../interfaces/post'
 
 type Props = {
@@ -11,18 +12,20 @@ const Blog = ({ posts }: Props) => {
       <h2 className="mb-8 text-5xl md:text-7xl font-bold tracking-tighter leading-tight">
         Simeon Lees // Blog
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-32 mb-32">
+      <ol>
         {posts.map((post) => (
-          <PostPreview
-            key={post.slug}
-            title={post.title}
-            date={post.date}
-            author={post.author}
-            slug={post.slug}
-            description={post.description}
-          />
+          <li className="py-1 flex">
+            <Link
+              as={`/posts/${post.slug}`}
+              href="/posts/[slug]"
+              className="grow hover:underline"
+            >
+              {post.title}
+            </Link>
+            <span className="shrink-0"><DateFormatter dateString={post.date}/></span>
+          </li>
         ))}
-      </div>
+      </ol>
     </section>
   )
 }
