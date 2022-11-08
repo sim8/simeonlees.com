@@ -6,7 +6,7 @@ type Props = {
   posts: Post[]
 }
 
-const Blog = ({ posts }: Props) => {
+const BlogPosts = ({ posts }: Props) => {
   return (
     <section>
       <h2 className="mb-8 text-5xl md:text-7xl font-bold tracking-tighter leading-tight">
@@ -30,4 +30,4 @@ const Blog = ({ posts }: Props) => {
   )
 }
 
-export default Blog
+export default BlogPosts
