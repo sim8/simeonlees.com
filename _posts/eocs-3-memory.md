@@ -6,8 +6,6 @@ tag: Elements of Computing Systems
 author: Simeon Lees
 ---
 
-# Elements of Computing Systems: Memory
-
 Another key quality of processing chips is their ability to store values over time. To achieve this, a family of "memory chips" can be combined with chips from prior chapters.
 
 - **Combination chips** - time-independent. E.g. And, Or

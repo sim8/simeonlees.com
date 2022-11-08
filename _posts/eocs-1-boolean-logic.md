@@ -6,8 +6,6 @@ tag: Elements of Computing Systems
 author: Simeon Lees
 ---
 
-# Elements of Computing Systems: Boolean logic
-
 Basic logic gates (AND, OR, NAND) are the most atomic building blocks of computers and can quickly be combined to create chips capable of arithmetic.
 
 - Examples of gates: **And**, **Or**, **Xor**, **Multiplexer**, **Demultiplexer**, + multi bit versions

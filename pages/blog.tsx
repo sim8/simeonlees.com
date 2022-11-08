@@ -15,7 +15,7 @@ export default function Blog({ allPosts }: Props) {
     <>
       <Layout>
         <Head>
-          <title>Simeon Lees - blog</title>
+          <title>Simeon Lees - Blog</title>
         </Head>
         <Container>
           <Navigation />
