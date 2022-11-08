@@ -10,6 +10,7 @@ module.exports = {
         success: '#0070f3',
         cyan: '#79FFE1',
         blue: '#74b0ff',
+        green: '#118a11',
       },
       spacing: {
         28: '7rem',

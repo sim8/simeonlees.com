@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import DateFormatter from './date-formatter'
+import DateFormatter from './DateFormatter'
 import type Post from '../interfaces/post'
 
 type Props = {
@@ -22,7 +22,7 @@ const BlogPosts = ({ posts }: Props) => {
             >
               {post.title}
             </Link>
-            <span className="shrink-0"><DateFormatter dateString={post.date}/></span>
+            <span className="shrink-0 text-green"><DateFormatter dateString={post.date}/></span>
           </li>
         ))}
       </ol>

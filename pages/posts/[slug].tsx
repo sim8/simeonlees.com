@@ -8,6 +8,7 @@ import Head from 'next/head'
 import markdownToHtml from '../../lib/markdownToHtml'
 import type PostType from '../../interfaces/post'
 import Navigation from '../../components/Navigation'
+import DateFormatter from '../../components/DateFormatter'
 
 type Props = {
   post: PostType
@@ -33,7 +34,11 @@ export default function Post({ post, morePosts }: Props) {
               </title>
               {/* <meta property="og:image" content={post.ogImage.url} /> */}
             </Head>
-            <h2 className="mb-8 text-5xl font-bold tracking-tighter leading-tight">{post.title}</h2>
+            <header className="mb-8">
+              <h2 className="mb-4 text-5xl font-bold tracking-tighter leading-tight">{post.title}</h2>
+              <span className="text-green"><DateFormatter dateString={post.date}/></span>
+            </header>
+
             <PostBody content={post.content} />
           </>
         )}
