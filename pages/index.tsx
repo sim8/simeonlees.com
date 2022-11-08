@@ -12,9 +12,17 @@ export default function Index() {
         </Head>
         <Container>
           <Navigation/>
-          <section>
+          <section >
             <h1 className="mb-8 text-5xl md:text-7xl font-bold tracking-tighter leading-tight">Hi, I'm Simeon Lees.</h1>
             <p>Hey, I'm a Frontend Engineer with a passion for crafting <strong>delightful user experiences</strong>. I'm currently a Tech Lead at <a className="text-blue" href="https://www.hubspot.com">HubSpot</a> building out its collaboration platform.</p>
+            </section>
+            <hr className="my-7"/>
+            <section>
+              <ul>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/simeon-lees/" className="text-blue">https://www.linkedin.com/in/simeon-lees/</a></li>
+                <li>GitHub: <a href="https://github.com/sim8" className="text-blue">https://github.com/sim8</a></li>
+
+                </ul>
             </section>
 
         </Container>
