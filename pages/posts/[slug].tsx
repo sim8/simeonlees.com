@@ -36,7 +36,7 @@ export default function Post({ post, morePosts }: Props) {
             </Head>
             <header className="mb-8">
               <h2 className="mb-4 text-5xl font-bold tracking-tighter leading-tight">{post.title}</h2>
-              <span className="text-green"><DateFormatter dateString={post.date}/></span>
+              <span className="text-slate-400"><DateFormatter dateString={post.date}/></span>
             </header>
 
             <PostBody content={post.content} />
