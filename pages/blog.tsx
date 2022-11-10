@@ -1,5 +1,5 @@
 import Container from '../components/Container'
-import MoreStories from '../components/Blog'
+import BlogPosts from '../components/BlogPosts'
 import Layout from '../components/layout'
 import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
@@ -15,11 +15,11 @@ export default function Blog({ allPosts }: Props) {
     <>
       <Layout>
         <Head>
-          <title>Simeon Lees - blog</title>
+          <title>Simeon Lees - Blog</title>
         </Head>
         <Container>
           <Navigation />
-          <MoreStories posts={allPosts} />
+          <BlogPosts posts={allPosts} />
         </Container>
       </Layout>
     </>

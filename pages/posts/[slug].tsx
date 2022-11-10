@@ -1,49 +1,45 @@
 import { useRouter } from 'next/router'
 import ErrorPage from 'next/error'
 import Container from '../../components/Container'
-import PostBody from '../../components/post-body'
-import Header from '../../components/header'
-import PostHeader from '../../components/post-header'
+import PostBody from '../../components/PostBody'
 import Layout from '../../components/layout'
 import { getPostBySlug, getAllPosts } from '../../lib/api'
-import PostTitle from '../../components/post-title'
 import Head from 'next/head'
 import markdownToHtml from '../../lib/markdownToHtml'
 import type PostType from '../../interfaces/post'
+import Navigation from '../../components/Navigation'
+import DateFormatter from '../../components/DateFormatter'
 
 type Props = {
   post: PostType
   morePosts: PostType[]
-  preview?: boolean
 }
 
-export default function Post({ post, morePosts, preview }: Props) {
+export default function Post({ post, morePosts }: Props) {
   const router = useRouter()
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
   }
   return (
-    <Layout preview={preview}>
+    <Layout>
       <Container>
-        <Header />
+        <Navigation />
         {router.isFallback ? (
-          <PostTitle>Loading…</PostTitle>
+          <span>Loading...</span>
         ) : (
           <>
-            <article className="mb-32">
-              <Head>
-                <title>
-                  {post.title} | Simeon Lees
-                </title>
-                {/* <meta property="og:image" content={post.ogImage.url} /> */}
-              </Head>
-              <PostHeader
-                title={post.title}
-                date={post.date}
-                author={post.author}
-              />
-              <PostBody content={post.content} />
-            </article>
+            <Head>
+              <title>
+                {post.title} | Simeon Lees
+              </title>
+              {/* <meta property="og:image" content={post.ogImage.url} /> */}
+            </Head>
+            <header className="mb-8">
+              <h2 className="mb-4 text-5xl font-bold tracking-tighter leading-tight">{post.title}</h2>
+              <span className="text-green"><DateFormatter dateString={post.date}/></span>
+            </header>
+
+            <PostBody content={post.content} />
           </>
         )}
       </Container>
