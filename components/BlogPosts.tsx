@@ -16,8 +16,8 @@ const BlogPosts = ({ posts }: Props) => {
         {posts.map((post) => (
           <li className="py-1 flex unstyled" key={post.slug}>
             <Link
-              as={`/posts/${post.slug}`}
-              href="/posts/[slug]"
+              as={`/blog/${post.slug}`}
+              href="/blog/[slug]"
               className="grow hover:underline"
             >
               {post.title}
