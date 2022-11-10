@@ -14,7 +14,7 @@ const BlogPosts = ({ posts }: Props) => {
       </h2>
       <ol>
         {posts.map((post) => (
-          <li className="py-1 flex">
+          <li className="py-1 flex" key={post.slug}>
             <Link
               as={`/posts/${post.slug}`}
               href="/posts/[slug]"
@@ -22,7 +22,7 @@ const BlogPosts = ({ posts }: Props) => {
             >
               {post.title}
             </Link>
-            <span className="shrink-0 text-green"><DateFormatter dateString={post.date}/></span>
+            <span className="shrink-0 text-slate-400"><DateFormatter dateString={post.date}/></span>
           </li>
         ))}
       </ol>
