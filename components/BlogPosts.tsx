@@ -14,7 +14,7 @@ const BlogPosts = ({ posts }: Props) => {
       </h2>
       <ol>
         {posts.map((post) => (
-          <li className="py-1 flex">
+          <li className="py-1 flex" key={post.slug}>
             <Link
               as={`/posts/${post.slug}`}
               href="/posts/[slug]"
