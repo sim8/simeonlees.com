@@ -21,6 +21,7 @@ export default function Index() {
               <ul>
                 <li>LinkedIn: <a href="https://www.linkedin.com/in/simeon-lees/" className="text-blue">https://www.linkedin.com/in/simeon-lees/</a></li>
                 <li>GitHub: <a href="https://github.com/sim8" className="text-blue">https://github.com/sim8</a></li>
+                <li>CV: <a href="/simeon-lees-cv.pdf" className="text-blue">/simeon-lees-cv.pdf</a></li>
 
                 </ul>
             </section>
