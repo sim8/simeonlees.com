@@ -1,21 +1,22 @@
-.markdown {
-  @apply text-lg leading-relaxed;
-}
-
 .markdown p,
-.markdown ul,
-.markdown ol,
+.markdown > ul,
+.markdown > ol,
 .markdown blockquote {
   @apply my-6;
 }
 
+.markdown li > ul,
+.markdown li > ol {
+  @apply my-4;
+}
+
 
 .markdown ul {
-  @apply list-disc ml-5;
+  @apply ml-5;
 }
 
 .markdown li {
-  @apply pl-3;
+  @apply pl-3 my-2;
 }
 
 

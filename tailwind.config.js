@@ -1,8 +1,14 @@
+// tailwind.config.js
+const { fontFamily } = require('tailwindcss/defaultTheme')
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./components/**/*.tsx', './pages/**/*.tsx'],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['var(--font-inter)', ...fontFamily.sans],
+      },
       colors: {
         'accent-1': '#FAFAFA',
         'accent-2': '#EAEAEA',
@@ -11,6 +17,7 @@ module.exports = {
         cyan: '#79FFE1',
         blue: '#74b0ff',
         green: '#118a11',
+        'gray-800': '#374151',
       },
       spacing: {
         28: '7rem',
