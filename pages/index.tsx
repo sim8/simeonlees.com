@@ -13,7 +13,7 @@ export default function Index() {
         <Container>
           <Navigation/>
           <section >
-            <h1 className="mb-8 text-5xl md:text-7xl font-bold tracking-tighter leading-tight">Hi, I'm Simeon Lees.</h1>
+            <h1 className="mb-8 text-black text-5xl md:text-7xl font-bold tracking-tighter leading-tight">Hi, I'm Simeon Lees.</h1>
             <p>I'm a Frontend Engineer with a passion for crafting <strong>delightful user experiences</strong>. I'm currently a Tech Lead at <a className="text-blue" href="https://www.hubspot.com">HubSpot</a> building out its collaboration platform.</p>
             </section>
             <hr className="my-7"/>

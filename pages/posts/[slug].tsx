@@ -35,7 +35,7 @@ export default function Post({ post, morePosts }: Props) {
               {/* <meta property="og:image" content={post.ogImage.url} /> */}
             </Head>
             <header className="mb-8">
-              <h2 className="mb-4 text-5xl font-bold tracking-tighter leading-tight">{post.title}</h2>
+              <h2 className="mb-4 text-black text-5xl font-bold tracking-tighter leading-tight">{post.title}</h2>
               <span className="text-slate-400"><DateFormatter dateString={post.date}/></span>
             </header>
 

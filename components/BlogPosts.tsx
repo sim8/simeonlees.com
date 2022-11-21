@@ -9,7 +9,7 @@ type Props = {
 const BlogPosts = ({ posts }: Props) => {
   return (
     <section>
-      <h2 className="mb-8 text-5xl md:text-7xl font-bold tracking-tighter leading-tight">
+      <h2 className="mb-8 text-black text-5xl md:text-7xl font-bold tracking-tighter leading-tight">
         Simeon Lees // Blog
       </h2>
       <ol>
