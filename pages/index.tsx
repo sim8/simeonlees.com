@@ -3,6 +3,12 @@ import Layout from '../components/layout'
 import Head from 'next/head'
 import Navigation from '../components/Navigation'
 
+const links = [
+  { title: 'LinkedIn', href: "https://www.linkedin.com/in/simeon-lees/", linkText: 'https://www.linkedin.com/in/simeon-lees/' },
+  { title: 'GitHub', href: "https://github.com/sim8", linkText: 'https://github.com/sim8' },
+  { title: 'CV', href: "/simeon-lees-cv.pdf", linkText: '/simeon-lees-cv.pdf' },
+]
+
 export default function Index() {
   return (
     <>
@@ -19,9 +25,9 @@ export default function Index() {
             <hr className="my-7"/>
             <section>
               <ul>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/simeon-lees/" className="text-blue">https://www.linkedin.com/in/simeon-lees/</a></li>
-                <li>GitHub: <a href="https://github.com/sim8" className="text-blue">https://github.com/sim8</a></li>
-                <li>CV: <a href="/simeon-lees-cv.pdf" className="text-blue">/simeon-lees-cv.pdf</a></li>
+                {
+                  links.map(link => <li className="unstyled" key={link.href}>{link.title}: <a href={link.href} className="text-blue">{link.linkText}</a></li>)
+                }
 
                 </ul>
             </section>
