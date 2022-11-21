@@ -18,11 +18,13 @@ const routes: Route[] = [
   }
 ]
 
-export default function Navigation() {
+export default function Navigation({rightNav}: {rightNav?: React.ReactNode}) {
   const router = useRouter();
 
 
-  return <nav className="mb-2">
+  return <nav className="mb-2 flex">
+    <div className="grow">
+
     {routes.map(({pathname, title}) => {
       const isCurrentRoute = pathname === '/' ? router.pathname === pathname : router.pathname.startsWith(pathname)
       return (
@@ -31,7 +33,9 @@ export default function Navigation() {
           'text-slate-400 cursor-default': isCurrentRoute,
 
         })} href={pathname}>{title}</Link>
-      )
-    })}
+        )
+      })}
+      </div>
+    {rightNav ? rightNav : null}
   </nav>
 }

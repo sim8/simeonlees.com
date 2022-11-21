@@ -24,7 +24,7 @@ export default function Post({ post, morePosts }: Props) {
   return (
     <Layout>
       <Container>
-        <Navigation />
+        <Navigation rightNav={<Link href="/blog" className='hover:underline'>← All posts</Link>}/>
         {router.isFallback ? (
           <span>Loading...</span>
         ) : (
@@ -36,7 +36,6 @@ export default function Post({ post, morePosts }: Props) {
               {/* <meta property="og:image" content={post.ogImage.url} /> */}
             </Head>
             <header className="mb-8">
-              <Link href="/blog" className='hover:underline mt-7 mb-4 block'>← All posts</Link>
               <h2 className="mb-4 text-black text-5xl font-bold tracking-tighter leading-tight">{post.title}</h2>
               <span className="text-slate-400"><DateFormatter dateString={post.date}/></span>
             </header>
