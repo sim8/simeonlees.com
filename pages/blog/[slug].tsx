@@ -9,15 +9,13 @@ import markdownToHtml from '../../lib/markdownToHtml';
 import type PostType from '../../interfaces/post';
 import Navigation from '../../components/Navigation';
 import DateFormatter from '../../components/DateFormatter';
-import Link from 'next/link';
 import Heading from '../../components/Heading';
 
 type Props = {
   post: PostType;
-  morePosts: PostType[];
 };
 
-export default function Post({ post, morePosts }: Props) {
+export default function Post({ post }: Props) {
   const router = useRouter();
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;
