@@ -9,15 +9,12 @@ type Props = {
 const BlogPosts = ({ posts }: Props) => {
   return (
     <section>
-      <h2 className="mb-8 text-black text-5xl md:text-7xl font-bold tracking-tighter leading-tight">
-        Simeon Lees // Blog
-      </h2>
       <ol>
         {posts.map((post) => (
           <li className="py-1 flex unstyled" key={post.slug}>
             <Link
-              as={`/posts/${post.slug}`}
-              href="/posts/[slug]"
+              as={`/blog/${post.slug}`}
+              href="/blog/[slug]"
               className="grow hover:underline"
             >
               {post.title}

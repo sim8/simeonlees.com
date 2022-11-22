@@ -5,6 +5,7 @@ import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
 import Post from '../interfaces/post'
 import Navigation from '../components/Navigation'
+import Heading from '../components/Heading'
 
 type Props = {
   allPosts: Post[]
@@ -19,6 +20,7 @@ export default function Blog({ allPosts }: Props) {
         </Head>
         <Container>
           <Navigation />
+          <Heading>Simeon Lees // Blog</Heading>
           <BlogPosts posts={allPosts} />
         </Container>
       </Layout>
