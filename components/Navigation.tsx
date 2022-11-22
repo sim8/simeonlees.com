@@ -18,6 +18,8 @@ const routes: Route[] = [
   }
 ]
 
+const linkCommonClassnames = 'mr-4';
+
 export default function Navigation({rightNav}: {rightNav?: React.ReactNode}) {
   const router = useRouter();
 
@@ -27,13 +29,7 @@ export default function Navigation({rightNav}: {rightNav?: React.ReactNode}) {
 
     {routes.map(({pathname, title}) => {
       const isCurrentRoute = pathname === '/' ? router.pathname === pathname : router.pathname.startsWith(pathname)
-      return (
-        <Link key={pathname} className={classNames("mr-4", {
-          'hover:underline': !isCurrentRoute,
-          'text-slate-400 cursor-default': isCurrentRoute,
-
-        })} href={pathname}>{title}</Link>
-        )
+      return isCurrentRoute ? <span className={`${linkCommonClassnames} text-slate-400`}>{title}</span> :         <Link key={pathname} className={`${linkCommonClassnames} hover:underline`} href={pathname}>{title}</Link>
       })}
       </div>
     {rightNav ? rightNav : null}
