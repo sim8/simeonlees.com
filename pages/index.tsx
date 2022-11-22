@@ -30,9 +30,9 @@ export default function Index() {
           <section>
             <Heading>Simeon Lees</Heading>
             <p>
-              I'm a Frontend Engineer with a passion for crafting{' '}
-              <strong>delightful user experiences</strong>. I'm currently a Tech
-              Lead at{' '}
+              I&apos;m a Frontend Engineer with a passion for crafting{' '}
+              <strong>delightful user experiences</strong>. I&apos;m currently a
+              Tech Lead at{' '}
               <a className="text-blue" href="https://www.hubspot.com">
                 HubSpot
               </a>{' '}
