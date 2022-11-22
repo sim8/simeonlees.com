@@ -1,15 +1,15 @@
-import Container from '../components/Container'
-import BlogPosts from '../components/BlogPosts'
-import Layout from '../components/layout'
-import { getAllPosts } from '../lib/api'
-import Head from 'next/head'
-import Post from '../interfaces/post'
-import Navigation from '../components/Navigation'
-import Heading from '../components/Heading'
+import Container from '../components/Container';
+import BlogPosts from '../components/BlogPosts';
+import Layout from '../components/layout';
+import { getAllPosts } from '../lib/api';
+import Head from 'next/head';
+import Post from '../interfaces/post';
+import Navigation from '../components/Navigation';
+import Heading from '../components/Heading';
 
 type Props = {
-  allPosts: Post[]
-}
+  allPosts: Post[];
+};
 
 export default function Blog({ allPosts }: Props) {
   return (
@@ -25,7 +25,7 @@ export default function Blog({ allPosts }: Props) {
         </Container>
       </Layout>
     </>
-  )
+  );
 }
 
 export const getStaticProps = async () => {
@@ -35,9 +35,9 @@ export const getStaticProps = async () => {
     'slug',
     'author',
     'description',
-  ])
+  ]);
 
   return {
     props: { allPosts },
-  }
-}
+  };
+};

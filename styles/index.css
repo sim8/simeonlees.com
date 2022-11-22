@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply text-gray-800
+  @apply text-gray-800;
 }
 
 @layer base {
@@ -11,7 +11,7 @@ body {
     position: relative;
   }
   li::before {
-    content: "";
+    content: '';
     position: absolute;
     background-color: #d1d5db;
     border-radius: 50%;

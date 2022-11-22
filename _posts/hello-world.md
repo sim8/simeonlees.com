@@ -13,7 +13,7 @@ I don't yet know how often I'll be posting, but I'm hoping to catalogue some of 
 Not much else to say for now. Hopefully see you soon 🙂
 
 ```javascript
-const pleaseIgnoreMe = `Testing, ${123}`
+const pleaseIgnoreMe = `Testing, ${123}`;
 
-console.log('Just seeing if this styling works')
+console.log('Just seeing if this styling works');
 ```

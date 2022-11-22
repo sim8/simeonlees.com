@@ -1,10 +1,9 @@
-
-import Meta from './meta'
+import Meta from './meta';
 
 type Props = {
-  preview?: boolean
-  children: React.ReactNode
-}
+  preview?: boolean;
+  children: React.ReactNode;
+};
 
 const Layout = ({ children }: Props) => {
   return (
@@ -14,7 +13,7 @@ const Layout = ({ children }: Props) => {
         <main>{children}</main>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

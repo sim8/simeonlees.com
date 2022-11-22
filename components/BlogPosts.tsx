@@ -1,10 +1,10 @@
-import Link from 'next/link'
-import DateFormatter from './DateFormatter'
-import type Post from '../interfaces/post'
+import Link from 'next/link';
+import DateFormatter from './DateFormatter';
+import type Post from '../interfaces/post';
 
 type Props = {
-  posts: Post[]
-}
+  posts: Post[];
+};
 
 const BlogPosts = ({ posts }: Props) => {
   return (
@@ -19,12 +19,14 @@ const BlogPosts = ({ posts }: Props) => {
             >
               {post.title}
             </Link>
-            <span className="shrink-0 text-slate-400"><DateFormatter dateString={post.date}/></span>
+            <span className="shrink-0 text-slate-400">
+              <DateFormatter dateString={post.date} />
+            </span>
           </li>
         ))}
       </ol>
     </section>
-  )
-}
+  );
+};
 
-export default BlogPosts
+export default BlogPosts;

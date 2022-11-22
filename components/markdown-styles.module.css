@@ -10,7 +10,6 @@
   @apply my-4;
 }
 
-
 .markdown ul {
   @apply ml-5;
 }
@@ -18,7 +17,6 @@
 .markdown li {
   @apply pl-3 my-2;
 }
-
 
 .markdown h2 {
   @apply text-3xl mt-12 mb-4 leading-snug;
