@@ -10,6 +10,7 @@ import type PostType from '../../interfaces/post'
 import Navigation from '../../components/Navigation'
 import DateFormatter from '../../components/DateFormatter'
 import Link from 'next/link'
+import Heading from '../../components/Heading'
 
 type Props = {
   post: PostType
@@ -24,7 +25,7 @@ export default function Post({ post, morePosts }: Props) {
   return (
     <Layout>
       <Container>
-        <Navigation rightNav={<Link href="/blog" className='hover:underline'>← All posts</Link>}/>
+        <Navigation rightNav={<Link href="/blog" className='hover:underline'>← Back</Link>}/>
         {router.isFallback ? (
           <span>Loading...</span>
         ) : (
@@ -36,7 +37,9 @@ export default function Post({ post, morePosts }: Props) {
               {/* <meta property="og:image" content={post.ogImage.url} /> */}
             </Head>
             <header className="mb-8">
-              <h2 className="mb-4 text-black text-5xl font-bold tracking-tighter leading-tight">{post.title}</h2>
+            <Heading>
+            {post.title}
+            </Heading>
               <span className="text-slate-400"><DateFormatter dateString={post.date}/></span>
             </header>
 

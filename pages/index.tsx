@@ -2,6 +2,7 @@ import Container from '../components/Container'
 import Layout from '../components/layout'
 import Head from 'next/head'
 import Navigation from '../components/Navigation'
+import Heading from '../components/Heading'
 
 const links = [
   { title: 'LinkedIn', href: "https://www.linkedin.com/in/simeon-lees/", linkText: 'https://www.linkedin.com/in/simeon-lees/' },
@@ -19,7 +20,7 @@ export default function Index() {
         <Container>
           <Navigation/>
           <section >
-            <h1 className="mb-8 text-black text-5xl md:text-7xl font-bold tracking-tighter leading-tight">Hi, I'm Simeon Lees.</h1>
+    <Heading>Simeon Lees</Heading>
             <p>I'm a Frontend Engineer with a passion for crafting <strong>delightful user experiences</strong>. I'm currently a Tech Lead at <a className="text-blue" href="https://www.hubspot.com">HubSpot</a> building out its collaboration platform.</p>
             </section>
             <hr className="my-7"/>
