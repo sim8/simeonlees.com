@@ -25,7 +25,7 @@ export default function Post({ post, morePosts }: Props) {
   return (
     <Layout>
       <Container>
-        <Navigation rightNav={<Link href="/blog" className='hover:underline'>← Back</Link>}/>
+        <Navigation backUrl="/blog" />
         {router.isFallback ? (
           <span>Loading...</span>
         ) : (

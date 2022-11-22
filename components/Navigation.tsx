@@ -20,7 +20,7 @@ const routes: Route[] = [
 
 const linkCommonClassnames = 'mr-4';
 
-export default function Navigation({rightNav}: {rightNav?: React.ReactNode}) {
+export default function Navigation({backUrl}: {backUrl?: string}) {
   const router = useRouter();
 
 
@@ -32,6 +32,6 @@ export default function Navigation({rightNav}: {rightNav?: React.ReactNode}) {
       return isCurrentRoute ? <span className={`${linkCommonClassnames} text-slate-400`}>{title}</span> :         <Link key={pathname} className={`${linkCommonClassnames} hover:underline`} href={pathname}>{title}</Link>
       })}
       </div>
-    {rightNav ? rightNav : null}
+    {backUrl ? <Link href={backUrl} className='hover:underline'>← Back</Link> : null}
   </nav>
 }
