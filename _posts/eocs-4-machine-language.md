@@ -1,6 +1,6 @@
 ---
 title: 'Elements of Computing Systems // 4: machine language'
-date: '2022-11-26T05:35:07.322Z'
+date: '2022-11-12T05:35:07.322Z'
 description: Chapter summary of Elements of Computing Systems chapter 4 - machine language.
 tag: Elements of Computing Systems
 author: Simeon Lees
