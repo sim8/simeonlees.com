@@ -5,12 +5,21 @@
   @apply my-6;
 }
 
+.markdown ol {
+  @apply list-decimal
+}
+
+.markdown a {
+  @apply text-blue hover:underline;
+}
+
 .markdown li > ul,
 .markdown li > ol {
   @apply my-4;
 }
 
-.markdown ul {
+.markdown ul,
+.markdown ol {
   @apply ml-5;
 }
 

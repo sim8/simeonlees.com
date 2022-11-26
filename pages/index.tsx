@@ -33,7 +33,10 @@ export default function Index() {
               I&apos;m a Frontend Engineer with a passion for crafting{' '}
               <strong>delightful user experiences</strong>. I&apos;m currently a
               Tech Lead at{' '}
-              <a className="text-blue" href="https://www.hubspot.com">
+              <a
+                className="text-blue hover:underline"
+                href="https://www.hubspot.com"
+              >
                 HubSpot
               </a>{' '}
               building out its collaboration platform.
@@ -45,7 +48,7 @@ export default function Index() {
               {links.map((link) => (
                 <li className="unstyled" key={link.href}>
                   {link.title}:{' '}
-                  <a href={link.href} className="text-blue">
+                  <a href={link.href} className="text-blue hover:underline">
                     {link.linkText}
                   </a>
                 </li>
