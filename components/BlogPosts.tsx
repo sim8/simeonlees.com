@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import DateFormatter from './DateFormatter';
-import type Post from '../interfaces/post';
+import type { PostType } from '../types';
 
 type Props = {
-  posts: Post[];
+  posts: PostType[];
 };
 
 const BlogPosts = ({ posts }: Props) => {
