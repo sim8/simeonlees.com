@@ -18,7 +18,7 @@ export default function Projects() {
           <Navigation />
           <Heading>Simeon Lees // Projects</Heading>
           <section>
-            <ul>
+            <ul className="unstyled">
               {projects.map(
                 ({ slug, title, description, previewUrl, link }) => (
                   <li key={slug}>
