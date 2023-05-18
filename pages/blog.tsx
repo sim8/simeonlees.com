@@ -3,12 +3,12 @@ import BlogPosts from '../components/BlogPosts';
 import Layout from '../components/layout';
 import { getAllPosts } from '../lib/api';
 import Head from 'next/head';
-import Post from '../interfaces/post';
+import type { PostType } from '../types';
 import Navigation from '../components/Navigation';
 import Heading from '../components/Heading';
 
 type Props = {
-  allPosts: Post[];
+  allPosts: PostType[];
 };
 
 export default function Blog({ allPosts }: Props) {

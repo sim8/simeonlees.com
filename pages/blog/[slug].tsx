@@ -6,7 +6,7 @@ import Layout from '../../components/layout';
 import { getPostBySlug, getAllPosts } from '../../lib/api';
 import Head from 'next/head';
 import markdownToHtml from '../../lib/markdownToHtml';
-import type PostType from '../../interfaces/post';
+import type { PostType } from '../../types';
 import Navigation from '../../components/Navigation';
 import DateFormatter from '../../components/DateFormatter';
 import Heading from '../../components/Heading';

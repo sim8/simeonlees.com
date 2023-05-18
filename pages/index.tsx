@@ -44,9 +44,9 @@ export default function Index() {
           </section>
           <hr className="my-7" />
           <section>
-            <ul>
+            <ul className="unstyled">
               {links.map((link) => (
-                <li className="unstyled" key={link.href}>
+                <li key={link.href}>
                   {link.title}:{' '}
                   <a href={link.href} className="text-blue hover:underline">
                     {link.linkText}
