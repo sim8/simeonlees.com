@@ -18,14 +18,41 @@ export default function IsometricJs() {
         </header>
 
         <div>
-          <p>TODO content</p>
-          <iframe
-            src="https://isometric-js.netlify.app/"
-            width="800"
-            height="480"
-          />
+          <p className="mb-4">
+            This is an isometric rendering engine I built in JS. I attempted
+            this to get exposure to game programming patterns, and potentially
+            use it as a foundation for a game in future.
+          </p>
+          <p className="mb-8">
+            I wanted to avoid using any libraries for the game mechanics, and so
+            am interacting with the HTML canvas directly to render and using
+            Redux to maintain some state (camera + world).
+          </p>
+          <h2 className="text-2xl mb-4 leading-snug">How to use</h2>
+          <ul className="ml-5">
+            <li>Click the iframe to focus it</li>
+            <li>
+              <b>R</b> - rotate camera
+            </li>
+            <li>
+              <b>Z</b> - cycle zoom
+            </li>
+            <li>
+              <b>Arrow keys</b> - pan camera
+            </li>
+            <li>
+              <b>Esc</b> - unfocus iframe
+            </li>
+          </ul>
         </div>
       </Container>
+
+      <iframe
+        className="mx-auto"
+        src="https://isometric-js.netlify.app/"
+        width="800"
+        height="480"
+      />
     </Layout>
   );
 }
