@@ -3,6 +3,7 @@ import Layout from '../../components/layout';
 import Head from 'next/head';
 import Navigation from '../../components/Navigation';
 import Heading from '../../components/Heading';
+import Link from 'next/link';
 
 export default function IsometricJs() {
   return (
@@ -28,31 +29,50 @@ export default function IsometricJs() {
             am interacting with the HTML canvas directly to render and using
             Redux to maintain some state (camera + world).
           </p>
-          <h2 className="text-2xl mb-4 leading-snug">How to use</h2>
-          <ul className="ml-5">
-            <li>Click the iframe to focus it</li>
-            <li>
-              <b>R</b> - rotate camera
-            </li>
-            <li>
-              <b>Z</b> - cycle zoom
-            </li>
-            <li>
-              <b>Arrow keys</b> - pan camera
-            </li>
-            <li>
-              <b>Esc</b> - unfocus iframe
-            </li>
-          </ul>
         </div>
+        <h2 className="text-2xl mb-4 leading-snug">How to use</h2>
+        <ul className="ml-5">
+          <li>Click the iframe to focus it</li>
+          <li>
+            <b>R</b> - rotate camera
+          </li>
+          <li>
+            <b>Z</b> - cycle zoom
+          </li>
+          <li>
+            <b>Arrow keys</b> - pan camera
+          </li>
+          <li>
+            <b>Esc</b> - unfocus iframe
+          </li>
+        </ul>
+        <h2 className="text-2xl mt-6 mb-4 leading-snug">Links</h2>
+        <ul className="ml-5">
+          <li>
+            <Link
+              className="text-blue hover:underline"
+              href="https://isometric-js.netlify.app/"
+            >
+              https://isometric-js.netlify.app/
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="text-blue hover:underline"
+              href="https://github.com/sim8/isometric-js"
+            >
+              https://github.com/sim8/isometric-js
+            </Link>
+          </li>
+        </ul>
       </Container>
-
       <iframe
         className="mx-auto"
         src="https://isometric-js.netlify.app/"
         width="800"
         height="480"
       />
+      <Container></Container>
     </Layout>
   );
 }

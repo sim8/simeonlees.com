@@ -16,7 +16,7 @@ export default function Projects() {
         </Head>
         <Container>
           <Navigation />
-          <Heading>Simeon Lees // Projects</Heading>
+          <Heading>Projects</Heading>
           <section>
             <ul className="unstyled">
               {projects.map(
