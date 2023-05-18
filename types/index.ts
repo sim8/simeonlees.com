@@ -6,3 +6,10 @@ export type PostType = {
   description: string;
   content: string;
 };
+
+export type Project = {
+  title: string;
+  slug: string;
+  descriptionHtml: string;
+  previewUrl: string;
+};

@@ -12,6 +12,10 @@ const routes: Route[] = [
     title: 'About',
   },
   {
+    pathname: '/projects',
+    title: 'Projects',
+  },
+  {
     pathname: '/blog',
     title: 'Blog',
   },
