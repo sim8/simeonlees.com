@@ -5,7 +5,7 @@ import Navigation from '../components/Navigation';
 import Heading from '../components/Heading';
 import projects from '../config/projects';
 import Image from 'next/image';
-import Link from 'next/link';
+import ButtonLink from '../components/ButtonLink';
 
 export default function Projects() {
   return (
@@ -21,17 +21,17 @@ export default function Projects() {
             <ul className="unstyled">
               {projects.map(
                 ({ slug, title, description, previewUrl, link }) => (
-                  <li key={slug}>
-                    <div>
-                      <h2>{title}</h2>
-                      <p>{description}</p>
-                      <Link href={link}>Go</Link>
+                  <li key={slug} className="flex items-start mb-10">
+                    <div className="flex-1 mr-10">
+                      <h2 className="text-2xl mb-4 leading-snug">{title}</h2>
+                      <p className="mb-5">{description}</p>
+                      <ButtonLink href={link}>Go</ButtonLink>
                     </div>
                     <Image
                       src={previewUrl}
                       alt={title}
-                      width={200}
-                      height={180}
+                      width={248}
+                      height={192}
                     />
                   </li>
                 )

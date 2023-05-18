@@ -5,7 +5,7 @@ const projects: Project[] = [
     title: 'Learn Regex',
     slug: 'learn-regex',
     description:
-      'An interactive tutorial to teach the fundamentals of regular expression. Starting out as a small exercise in tutorial development, the site now receives visitors weekly from all over the world.',
+      'An interactive tutorial on the fundamentals of regular expression. Starting out as a small exercise in tutorial development, the site now receives visitors weekly from all over the world.',
     previewUrl: '/images/learn-regex-thumbnail.png',
     link: 'https://www.learn-regex.com',
   },
