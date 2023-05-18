@@ -72,7 +72,6 @@ export default function IsometricJs() {
         width="800"
         height="480"
       />
-      <Container></Container>
     </Layout>
   );
 }
