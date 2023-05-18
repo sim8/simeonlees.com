@@ -21,7 +21,7 @@ const routes: Route[] = [
   },
 ];
 
-const linkCommonClassnames = 'mr-4';
+const linkCommonClassnames = 'mr-5';
 
 export default function Navigation({ backUrl }: { backUrl?: string }) {
   const router = useRouter();

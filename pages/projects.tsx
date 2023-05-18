@@ -4,6 +4,8 @@ import Head from 'next/head';
 import Navigation from '../components/Navigation';
 import Heading from '../components/Heading';
 import projects from '../config/projects';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Projects() {
   return (
@@ -17,9 +19,23 @@ export default function Projects() {
           <Heading>Simeon Lees // Projects</Heading>
           <section>
             <ul>
-              {projects.map(({ slug, title }) => (
-                <li key={slug}>{title}</li>
-              ))}
+              {projects.map(
+                ({ slug, title, description, previewUrl, link }) => (
+                  <li key={slug}>
+                    <div>
+                      <h2>{title}</h2>
+                      <p>{description}</p>
+                      <Link href={link}>Go</Link>
+                    </div>
+                    <Image
+                      src={previewUrl}
+                      alt={title}
+                      width={200}
+                      height={180}
+                    />
+                  </li>
+                )
+              )}
             </ul>
           </section>
         </Container>
