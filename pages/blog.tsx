@@ -20,7 +20,7 @@ export default function Blog({ allPosts }: Props) {
         </Head>
         <Container>
           <Navigation />
-          <Heading>Simeon Lees // Blog</Heading>
+          <Heading>Blog</Heading>
           <BlogPosts posts={allPosts} />
         </Container>
       </Layout>
