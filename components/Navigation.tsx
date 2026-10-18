@@ -15,10 +15,6 @@ const routes: Route[] = [
     pathname: '/projects',
     title: 'Side projects',
   },
-  {
-    pathname: '/blog',
-    title: 'Blog',
-  },
 ];
 
 const linkCommonClassnames = 'mr-5';
