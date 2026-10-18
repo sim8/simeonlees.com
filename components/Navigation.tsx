@@ -35,7 +35,10 @@ export default function Navigation({ backUrl }: { backUrl?: string }) {
               ? router.pathname === pathname
               : router.pathname.startsWith(pathname);
           return isCurrentRoute ? (
-            <span className={`${linkCommonClassnames} text-slate-400`}>
+            <span
+              key={pathname}
+              className={`${linkCommonClassnames} text-slate-400`}
+            >
               {title}
             </span>
           ) : (

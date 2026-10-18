@@ -1,6 +1,7 @@
 import { AppProps } from 'next/app';
-import { Inter } from '@next/font/google';
+import { Inter } from 'next/font/google';
 import '../styles/index.css';
+import 'prismjs/themes/prism-okaidia.css';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 import { GA_TRACKING_ID, pageview } from '../lib/gtag';

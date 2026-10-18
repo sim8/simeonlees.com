@@ -1,3 +1,5 @@
+@reference "../styles/index.css";
+
 .markdown p,
 .markdown > ul,
 .markdown > ol,
@@ -6,7 +8,7 @@
 }
 
 .markdown ol {
-  @apply list-decimal
+  @apply list-decimal;
 }
 
 .markdown a {
