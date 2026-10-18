@@ -1,4 +1,5 @@
 import { Project } from '../types';
+import gemRunnersThumbnail from '../public/images/gem-runners/mining-gameplay.webp';
 import learnRegexThumbnail from '../public/images/learn-regex-thumbnail.png';
 import isometricJsThumbnail from '../public/images/isometric-js-thumbnail.png';
 
@@ -6,6 +7,7 @@ const projects: Project[] = [
   {
     title: 'Gem Runners',
     slug: 'gem-runners',
+    previewUrl: gemRunnersThumbnail,
     description:
       'An asteroid-mining game built in C# and MonoGame. An exercise in building a game engine, procedural worlds, UI, and pixel art from scratch—and learning that making it fun is the hard part.',
     link: '/projects/gem-runners',
