@@ -9,14 +9,12 @@ const links = [
   {
     title: 'LinkedIn',
     href: 'https://www.linkedin.com/in/simeon-lees/',
-    linkText: 'https://www.linkedin.com/in/simeon-lees/',
   },
   {
     title: 'GitHub',
     href: 'https://github.com/sim8',
-    linkText: 'https://github.com/sim8',
   },
-  { title: 'CV', href: '/simeon-lees-cv.pdf', linkText: '/simeon-lees-cv.pdf' },
+  { title: 'CV', href: '/simeon-lees-cv.pdf' },
 ];
 
 export default function Index() {
@@ -43,6 +41,20 @@ export default function Index() {
                 </a>{' '}
                 building out its collaboration platform.
               </p>
+              <ul className="unstyled mt-6 flex flex-wrap items-center gap-x-3 gap-y-2">
+                {links.map((link, index) => (
+                  <li key={link.href} className="flex items-center gap-3">
+                    {index > 0 && (
+                      <span aria-hidden="true" className="text-slate-400">
+                        ·
+                      </span>
+                    )}
+                    <a href={link.href} className="text-blue hover:underline">
+                      {link.title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
             </div>
             <Image
               src="/images/simeon-lees.png"
@@ -50,21 +62,9 @@ export default function Index() {
               width={400}
               height={400}
               priority
-              className="h-40 w-40 shrink-0 object-cover sm:mt-5 sm:h-48 sm:w-48"
+              sizes="144px"
+              className="h-36 w-36 shrink-0 object-cover sm:mt-5"
             />
-          </section>
-          <hr className="my-7" />
-          <section>
-            <ul className="unstyled">
-              {links.map((link) => (
-                <li key={link.href}>
-                  {link.title}:{' '}
-                  <a href={link.href} className="text-blue hover:underline">
-                    {link.linkText}
-                  </a>
-                </li>
-              ))}
-            </ul>
           </section>
         </Container>
       </Layout>
