@@ -4,6 +4,13 @@ import isometricJsThumbnail from '../public/images/isometric-js-thumbnail.png';
 
 const projects: Project[] = [
   {
+    title: 'Gem Runners',
+    slug: 'gem-runners',
+    description:
+      'An asteroid-mining game built in C# and MonoGame. An exercise in building a game engine, procedural worlds, UI, and pixel art from scratch—and learning that making it fun is the hard part.',
+    link: '/projects/gem-runners',
+  },
+  {
     title: 'Learn Regex',
     slug: 'learn-regex',
     description:

@@ -13,6 +13,6 @@ export type Project = {
   title: string;
   slug: string;
   description: string;
-  previewUrl: StaticImageData;
+  previewUrl?: StaticImageData;
   link: string;
 };
