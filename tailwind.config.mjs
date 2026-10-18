@@ -1,13 +1,12 @@
-// tailwind.config.js
-const { fontFamily } = require('tailwindcss/defaultTheme');
+import defaultTheme from 'tailwindcss/defaultTheme';
 
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+const config = {
   content: ['./components/**/*.tsx', './pages/**/*.tsx'],
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-inter)', ...fontFamily.sans],
+        sans: ['var(--font-inter)', ...defaultTheme.fontFamily.sans],
       },
       colors: {
         'accent-1': '#FAFAFA',
@@ -29,7 +28,7 @@ module.exports = {
         tight: 1.2,
       },
       fontSize: {
-        '5xl': '2.5rem',
+        '5xl': ['2.5rem', { lineHeight: '1.5' }],
         '6xl': '2.75rem',
         '7xl': '4.5rem',
         '8xl': '6.25rem',
@@ -42,3 +41,5 @@ module.exports = {
   },
   plugins: [],
 };
+
+export default config;

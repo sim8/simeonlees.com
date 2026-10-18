@@ -1,11 +1,14 @@
 import { remark } from 'remark';
-import html from 'remark-html';
-import prism from 'remark-prism';
+import remarkRehype from 'remark-rehype';
+import rehypePrism from 'rehype-prism-plus';
+import rehypeStringify from 'rehype-stringify';
 
 export default async function markdownToHtml(markdown: string) {
+  // Posts are trusted, repository-authored Markdown and may include HTML.
   const result = await remark()
-    .use(html, { sanitize: false })
-    .use(prism)
+    .use(remarkRehype, { allowDangerousHtml: true })
+    .use(rehypePrism)
+    .use(rehypeStringify, { allowDangerousHtml: true })
     .process(markdown);
   return result.toString();
 }

@@ -4,34 +4,36 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "typecheck": "tsc"
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint ."
   },
   "dependencies": {
-    "@next/font": "^13.0.4",
-    "classnames": "^2.3.1",
-    "clsx": "^1.2.1",
-    "date-fns": "^2.28.0",
-    "gray-matter": "^4.0.3",
-    "next": "latest",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "remark": "^14.0.2",
-    "remark-html": "^15.0.1",
-    "remark-prism": "^1.3.6",
-    "typescript": "^4.7.4"
+    "date-fns": "^4.4.0",
+    "next": "^16.4.2",
+    "prismjs": "^1.30.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "rehype-prism-plus": "^2.0.2",
+    "rehype-stringify": "^10.0.1",
+    "remark": "^15.0.1",
+    "remark-rehype": "^11.1.2",
+    "vfile": "^6.0.3",
+    "vfile-matter": "^5.0.1"
   },
   "devDependencies": {
-    "@types/gtag.js": "^0.0.12",
-    "@types/node": "^18.0.3",
-    "@types/react": "^18.0.15",
-    "@types/react-dom": "^18.0.6",
-    "@typescript-eslint/eslint-plugin": "^5.44.0",
-    "@typescript-eslint/parser": "^5.44.0",
-    "autoprefixer": "^10.4.7",
-    "eslint": "^8.28.0",
-    "eslint-plugin-react": "^7.31.11",
-    "postcss": "^8.4.14",
-    "prettier": "2.7.1",
-    "tailwindcss": "^3.1.4"
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/gtag.js": "^0.0.20",
+    "@types/node": "^24.19.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^16.4.2",
+    "postcss": "^8.5.30",
+    "prettier": "^3.9.10",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": "24.x"
   }
 }

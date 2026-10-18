@@ -1,6 +1,7 @@
 import fs from 'fs';
 import { join } from 'path';
-import matter from 'gray-matter';
+import { VFile } from 'vfile';
+import { matter } from 'vfile-matter';
 
 const postsDirectory = join(process.cwd(), '_posts');
 
@@ -12,7 +13,10 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
   const realSlug = slug.replace(/\.md$/, '');
   const fullPath = join(postsDirectory, `${realSlug}.md`);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
-  const { data, content } = matter(fileContents);
+  const file = new VFile(fileContents);
+  matter(file, { strip: true });
+  const data = file.data.matter as Record<string, string>;
+  const content = String(file);
 
   type Items = {
     [key: string]: string;

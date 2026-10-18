@@ -29,18 +29,18 @@ export default function Index() {
           <Navigation />
           <section>
             <Heading>Simeon Lees</Heading>
-            <p>
-              I&apos;m a Frontend Engineer with a passion for crafting{' '}
-              <strong>delightful user experiences</strong>. I&apos;m currently a
-              Tech Lead at{' '}
-              <a
-                className="text-blue hover:underline"
-                href="https://www.hubspot.com"
-              >
-                HubSpot
-              </a>{' '}
-              building out its collaboration platform.
-            </p>
+            <div className="space-y-4">
+              <p>Hi! I&apos;m Simeon.</p>
+              <p>
+                I&apos;m a software engineer at Figma. I like building products,
+                exploring new tech, and figuring out what makes software feel
+                great.
+              </p>
+              <p>
+                Previously at HubSpot. Outside work, I tinker with games and
+                educational experiences.
+              </p>
+            </div>
           </section>
           <hr className="my-7" />
           <section>

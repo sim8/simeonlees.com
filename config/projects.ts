@@ -1,8 +1,17 @@
 import { Project } from '../types';
+import gemRunnersThumbnail from '../public/images/gem-runners/thumbnail.webp';
 import learnRegexThumbnail from '../public/images/learn-regex-thumbnail.png';
 import isometricJsThumbnail from '../public/images/isometric-js-thumbnail.png';
 
 const projects: Project[] = [
+  {
+    title: 'Gem Runners',
+    slug: 'gem-runners',
+    previewUrl: gemRunnersThumbnail,
+    description:
+      'An asteroid-mining game built in C# and MonoGame. An exercise in building a game engine, procedural worlds, UI, and pixel art from scratch.',
+    link: '/projects/gem-runners',
+  },
   {
     title: 'Learn Regex',
     slug: 'learn-regex',
