@@ -12,11 +12,11 @@ export default function Projects() {
     <>
       <Layout>
         <Head>
-          <title>Simeon Lees - Projects</title>
+          <title>Simeon Lees - Side projects</title>
         </Head>
         <Container>
           <Navigation />
-          <Heading>Projects</Heading>
+          <Heading>Side projects</Heading>
           <section>
             <ul className="unstyled">
               {projects.map(

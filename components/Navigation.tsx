@@ -13,7 +13,7 @@ const routes: Route[] = [
   },
   {
     pathname: '/projects',
-    title: 'Projects',
+    title: 'Side projects',
   },
   {
     pathname: '/blog',
