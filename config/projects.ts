@@ -1,5 +1,5 @@
 import { Project } from '../types';
-import gemRunnersThumbnail from '../public/images/gem-runners/mining-gameplay.webp';
+import gemRunnersThumbnail from '../public/images/gem-runners/thumbnail.webp';
 import learnRegexThumbnail from '../public/images/learn-regex-thumbnail.png';
 import isometricJsThumbnail from '../public/images/isometric-js-thumbnail.png';
 
