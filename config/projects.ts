@@ -9,7 +9,7 @@ const projects: Project[] = [
     slug: 'gem-runners',
     previewUrl: gemRunnersThumbnail,
     description:
-      'An asteroid-mining game built in C# and MonoGame. An exercise in building a game engine, procedural worlds, UI, and pixel art from scratch—and learning that making it fun is the hard part.',
+      'An asteroid-mining game built in C# and MonoGame. An exercise in building a game engine, procedural worlds, UI, and pixel art from scratch.',
     link: '/projects/gem-runners',
   },
   {

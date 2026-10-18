@@ -45,30 +45,57 @@ export default function GemRunners() {
         </header>
         <div className="space-y-6">
           <p>
-            Gem Runners is an asteroid-mining game I built in C# with MonoGame,
-            a lightweight framework for cross-platform games. Beyond MonoGame, I
-            tried to avoid other libraries and frameworks as a learning
-            exercise.
+            The idea behind Gem Runners was simple: land on an asteroid, dig for
+            gems, and get out before it burns up. The valuable stuff is deeper
+            inside, past harder rock and pockets of lava. How far do you push
+            your luck before turning back?
           </p>
           <p>
-            I built the engine from scratch, including lighting and a custom
-            tiling system. I also built procedural asteroid generation and a
-            separate viewer to explore the results and iterate on them.
+            I built it in C# with MonoGame, a lightweight framework for
+            cross-platform games. I wanted to understand what went into making a
+            game, so beyond MonoGame I tried to avoid other libraries and
+            frameworks. That meant building the engine alongside the game, from
+            movement and collisions to lighting, world generation, and UI.
           </p>
           <p>
-            For the in-game UI, I built a layout system inspired by flexbox and
-            React. I learned a lot, but some of it was tedious: manually writing
-            out the x, y, width, and height of every character in my font PNG
-            was a particular highlight.
+            A lot of the work was in making those pieces interact. Driving and
+            drilling can destabilise the ground around you, opening cracks that
+            give way to lava. Explosive rock can set off nearby explosions.
+            Digging a tunnel changes both what you can see and how safely you
+            can get back out.
           </p>
           <p>
-            Along the way, I learned pixel art and created the artwork in
-            Aseprite.
+            Making that world look right was another project in itself. I
+            learned pixel art in Aseprite and built a tiling system that picks
+            each corner of a wall or floor from its neighbours, so the edges
+            join up as you mine. Then came the layers: getting the vehicle to
+            sit correctly behind walls, light spilling from lava, and fog
+            gradually lifting as you explore.
           </p>
           <p>
-            Ultimately, I struggled to make the core game loop really fun.
-            Building the systems was satisfying; making a game I wanted to keep
-            playing was much harder. Lots of respect for game designers!
+            The asteroids are generated rather than hand-drawn, with a crust,
+            mantle, and core, each with its own mix of rock, gems, and hazards.
+            I built a separate viewer to see the whole asteroid at once,
+            generate new ones, and toggle layers and walls. It let me inspect
+            the shape of a world without having to drive through every tunnel.
+          </p>
+          <p>
+            For the menus and inventory, I brought some familiar ideas from web
+            development: a tree of UI elements, composed like React components
+            and arranged with flexbox-style rows, columns, padding, and
+            alignment. Except this time I had to make all of that work myself.
+            Even displaying text meant mapping out the position and width of
+            each character in a font PNG, then measuring words to work out where
+            a line should wrap. Educational, occasionally tedious, and a good
+            reminder of what a browser usually does for me.
+          </p>
+          <p>
+            I&apos;m proud of the world and tools I built, but I never quite
+            cracked the core loop. There was always another system I could
+            improve; making the mining itself something I wanted to keep coming
+            back to was harder. I came away with a much better understanding of
+            how games work, and a lot more respect for the people who make them
+            fun.
           </p>
         </div>
         <section
