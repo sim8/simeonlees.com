@@ -52,7 +52,7 @@ export default function GemRunners() {
           <p>
             Gem Runners is an asteroid-mining game built in C# with MonoGame, a
             lightweight framework for cross-platform games. You explore
-            asteroids for gems and try to get out before time runs out.
+            asteroids for gems and have to get out before time runs out.
           </p>
           <p>
             Beyond MonoGame, I tried to avoid other libraries and frameworks as
@@ -72,11 +72,10 @@ export default function GemRunners() {
             caption="Mining, lighting, and the tiling system."
           />
           <p>
-            The asteroids are procedurally generated, with different materials
-            and hazards in the crust, mantle, and core. I built a separate
-            viewer to generate asteroids and inspect their layers without
-            playing through them. This made it easier to see what the generation
-            rules were producing.
+            The asteroids are procedurally generated using perlin noise, with
+            different materials and hazards in the crust, mantle, and core. I
+            built a separate viewer to generate asteroids and inspect their
+            layers without playing through them:
           </p>
           <Screenshot
             image={asteroidGenerator}
@@ -88,7 +87,7 @@ export default function GemRunners() {
             and flexbox: a tree of elements with rows, columns, padding, and
             alignment. That also meant handling text measurement and wrapping,
             including manually recording the coordinates and width of each
-            character in a font PNG. Useful to learn, though fairly tedious.
+            character in a font PNG. Useful to learn, though fairly tedious!
           </p>
           <p>
             I also learned pixel art and made the artwork in Aseprite, from the
@@ -100,9 +99,10 @@ export default function GemRunners() {
             caption="The base interior and in-game UI."
           />
           <p>
-            I enjoyed building it, but ultimately struggled to make the core
-            loop fun. It taught me a lot about game development, and gave me
-            more respect for game designers.
+            As much as I enjoyed building the game, I ultimately struggled to
+            make the core loop fun, and didn&apos;t pursue releasing it.
+            I&apos;m grateful for the technical lessons and now have a lot more
+            respect for game designers!
           </p>
         </div>
         <p className="mt-8">
